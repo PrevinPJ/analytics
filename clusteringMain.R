@@ -5,9 +5,11 @@
 #sample Data
 marks = data.frame(sub1=c(0,1,2,4,5,4,6,7),sub2=c(0,1,2,3,3,4,5,5))
 km1 = kmeans(marks, center=2)
+km1
+marks
 plot(marks,col=km1$cluster,cex=1.5)
-points(km1$center,col=1:2,pch=8,cex=2)
-
+points(km1$center,col=1:2,pch=8,cex=3)
+km1[8]
 
 #iris dataset
 
