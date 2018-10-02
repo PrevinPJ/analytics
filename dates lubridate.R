@@ -134,3 +134,4 @@ arrive
 arrive2 = as.Date(arrive, format='%d/%m/%y')
 (yrsbetw = year(today)-year(ref_date))
 (yrsbetw = year(today)-year(arrive2))
+
