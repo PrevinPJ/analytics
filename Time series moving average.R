@@ -2,11 +2,13 @@
 
 #MA
 #https://www.rdocumentation.org/packages/forecast/versions/8.4/topics/ma
+library(TTR)
+library(forecast)
 head(wineind)
 wineind
 str(wineind)
 plot(wineind)
-sm <- ma(wineind,order=12)
+sm <- ma(wineind,order=21)
 lines(sm,col="red")
 
 
