@@ -4,7 +4,10 @@
 library("curl")
 library("twitteR")
 library("ROAuth")
-library("syuzhet") #library for sentiment analysis - comparison
+library("syuzhet")#library for sentiment analysis - comparison
+library("openssl")
+library("httpuv")
+
 
 download.file(url="http://curl.haxx.se/ca/cacert.pem",destfile="cacert.pem")
 
@@ -28,7 +31,7 @@ load("twitter authentication.Rdata")
 setup_twitter_oauth(consumerKey, consumerSecret, AccessToken, AccessTokenSecret)
 #type 1 : Yes 
 #search.string <- "#businessanalytics"
-search.string <- "#marketinganalytics"
+search.string <- "#ximb"
 
 no.of.tweets <- 100
 
